@@ -1,75 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyShop</title>
-  <link rel="stylesheet" href="home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script defer src="home.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Big Brands Bash</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">MyShop</div>
-    <nav class="nav-links">
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">Electronics</a>
-      <a href="#">Home</a>
-    </nav>
-    <div class="icons">
-      <i class="icon">🔍</i>
-      <i class="icon">🛒</i>
-      <i class="icon">❤️</i>
-      <i class="icon">👤</i>
-    </div>
-  </header>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>MyShop</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Men</a>
+                <a href="#" class="nav-link">Women</a>
+                <a href="#" class="nav-link">Electronics</a>
+                <a href="#" class="nav-link">Home</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </header>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <h1>Big Brands Bash (19–22nd June)</h1>
-    <div class="cta-buttons">
-      <button>HER</button>
-      <button>HIM</button>
-    </div>
-  </section>
+    <section class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="big-brands-bash">
+                    <h2>BIG<br>BRANDS<br>BASH</h2>
+                    <p>19-22<sup>ND</sup> JUNE</p>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-secondary">HER ></button>
+                <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Filter Bar -->
-  <div class="filter-bar">
-    <button>All</button>
-    <button>Price</button>
-    <button>Brand</button>
-    <button>Discount</button>
-    <button>Offers Available</button>
-    <button>Sort</button>
-  </div>
+    <section class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <select class="filter-select">
+                    <option>All</option>
+                </select>
+                <select class="filter-select">
+                    <option>Price</option>
+                </select>
+                <select class="filter-select">
+                    <option>Brand</option>
+                </select>
+                <select class="filter-select">
+                    <option>Discount</option>
+                </select>
+                <span class="filter-pill">Offers Available</span>
+            </div>
+            <div class="sort-filter">
+                <span>Sort Filter</span>
+            </div>
+        </div>
+    </section>
 
-  <!-- Product Grid -->
-  <section class="product-grid">
-    <!-- Example Product -->
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product Image">
-      <h3>Running Shoes</h3>
-      <p>⭐ 4.5</p>
-      <p>$59.99</p>
-      <button>Add to Cart</button>
-    </div>
-  </section>
+    <section class="products">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image target-bg"></div>
+                    <div class="product-info">
+                        <h3>Target</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-score">3.1</span>
+                        </div>
+                        <div class="location">📍 Union Square</div>
+                        <button class="btn btn-pink">Explore Deals</button>
+                    </div>
+                </div>
 
-  <!-- Sponsored Results -->
-  <section class="sponsored-results">
-    <div class="sponsored-card">
-      <img src="https://via.placeholder.com/100" alt="Store Image">
-      <div>
-        <h4>Nordstrom Rack</h4>
-        <p>Union Square</p>
-        <p>⭐ 4.0</p>
-        <p>Open Now</p>
-        <button>Explore Deals</button>
-      </div>
-    </div>
-    <div class="map-placeholder">🗺️ Map here</div>
-  </section>
+                <div class="product-card">
+                    <div class="product-image watch-bg"></div>
+                    <div class="product-info">
+                        <h3>Galaxy Men's Watch</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-score">4.5</span>
+                        </div>
+                        <div class="price">$150</div>
+                        <button class="btn btn-white">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image shoes-bg"></div>
+                    <div class="product-info">
+                        <h3>Running Shoes</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-score">4.0</span>
+                        </div>
+                        <div class="price">$69</div>
+                        <button class="btn btn-pink">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image headphones-bg"></div>
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-score">4.7</span>
+                        </div>
+                        <div class="price">$199</div>
+                        <button class="btn btn-pink">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsored">
+        <div class="container">
+            <h2>Sponsored Results</h2>
+            <div class="sponsored-item">
+                <div class="sponsored-content">
+                    <div class="sponsored-image nordstrom-bg"></div>
+                    <div class="sponsored-info">
+                        <h3>Nordstrom Rack</h3>
+                        <div class="rating">
+                            <div class="stars">★★★☆☆</div>
+                            <span class="rating-score">3.1 (522 review)</span>
+                        </div>
+                        <div class="location">📍 Union Square - $8</div>
+                        <div class="hours">Open Until 9:00</div>
+                        <button class="btn btn-pink">Explore Deals</button>
+                    </div>
+                </div>
+                <div class="map-placeholder">🗺️</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
 </body>
 </html>
